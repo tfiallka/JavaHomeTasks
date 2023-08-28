@@ -15,10 +15,12 @@ public class Fraction {
         double additionResult = (numerator + fraction * 10) / denominator / 10;
         return additionResult;
     }
+
     public double multiplyFraction(double fraction) {
         double multiplicationResult = (numerator * fraction) / denominator;
         return multiplicationResult;
     }
+
     public double divideFraction(double fraction) {
         double dividingResult = numerator /fraction / denominator;
         return dividingResult;
