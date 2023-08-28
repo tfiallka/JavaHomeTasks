@@ -25,7 +25,4 @@ public class Fraction {
         double dividingResult = numerator /fraction / denominator;
         return dividingResult;
     }
-
-
-
 }
