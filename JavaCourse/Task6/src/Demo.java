@@ -1,4 +1,4 @@
-public class Main {
+public class Demo {
     public static void main(String[] args) {
         //Задача 1
         Fraction fraction = new Fraction(4, 5);
