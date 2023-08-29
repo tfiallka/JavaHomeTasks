@@ -17,17 +17,17 @@ public class Phone {
     public Phone() {
     }
 
-    public void receiveCall (String name) {
+    public void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
 
-    public void receiveCall (String name, String number) {
+    public void receiveCall(String name, String number) {
         System.out.println("Звонит " + name + " " + number);
     }
 
-    public void sendMessage (String ... numbers) {
+    public void sendMessage(String... numbers) {
         System.out.println("Сообщение отправлено: ");
-        for(String i : numbers) {
+        for (String i : numbers) {
             System.out.print(i + " ");
         }
         System.out.println();
