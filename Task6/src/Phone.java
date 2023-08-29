@@ -3,7 +3,6 @@ public class Phone {
     private String model;
     private double weight;
 
-
     public Phone(String number, String model, double weight) {
         this.number = number;
         this.model = model;
