@@ -12,7 +12,7 @@ public class Fraction {
     }
 
     public double addFraction(double fraction) {
-        double additionResult = (numerator + fraction * 10) / denominator / 10;
+        double additionResult = (double) numerator / denominator + fraction;
         return additionResult;
     }
 
