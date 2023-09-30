@@ -58,7 +58,7 @@ public abstract class FileGenerator {
         }
     }
 
-    public static void findArgInFile(String file) {
+    public static void findAvgInFile(String file) {
         ArrayList<Integer> allNumbers = new ArrayList<>();
         int number;
         try {
@@ -69,15 +69,15 @@ public abstract class FileGenerator {
             }
 
             System.out.println(allNumbers);
+            double avg = 0;
+            int sum = 0;
 
-            try (FileWriter outFileWriter = new FileWriter("out.txt")) {
-                int i = 0;
-                while (i < allNumbers.size()) {
-                    number = allNumbers.get(i);
-                    outFileWriter.write(number + "\n");
-                    i++;
+                for (int i = 0; i < allNumbers.size(); i++) {
+                    sum += allNumbers.get(i);
+                    avg = (double) sum / (i +1);
                 }
-            }
+            System.out.println(avg);
+
 
         } catch (IOException e) {
             throw new RuntimeException(e);
