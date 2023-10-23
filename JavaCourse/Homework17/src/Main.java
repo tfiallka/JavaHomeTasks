@@ -9,7 +9,6 @@ public class Main {
         System.out.println(isDateOdd("JANUARY 1 2000"));
     }
 
-
     public static boolean isDateOdd(String date) {
         SimpleDateFormat formatter = new SimpleDateFormat("MMMM d yyyy", Locale.ENGLISH);
         try {
@@ -17,7 +16,5 @@ public class Main {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
